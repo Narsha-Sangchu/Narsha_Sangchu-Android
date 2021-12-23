@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/drawable/checkebtn.xml" value="0.2574074074074074" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/drawable/loginbtn.xml" value="0.2574074074074074" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/drawable/register.xml" value="0.25277777777777777" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/drawable/register_button.xml" value="0.25277777777777777" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/layout/activity_main.xml" value="0.286231884057971" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/layout/activity_post_layout.xml" value="0.25" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/layout/activity_register_layout.xml" value="0.33" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/layout/content_main.xml" value="0.286231884057971" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/layout/fragment_first.xml" value="0.259963768115942" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/layout/fragment_second.xml" value="0.259963768115942" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/layout/login_layout.xml" value="0.259963768115942" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/layout/post_recycler_item.xml" value="0.33" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/layout/register_layout.xml" value="0.25317028985507245" />
+        <entry key="..\:/narsha/Narsha_LS/app/src/main/res/layout/writingscreen.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

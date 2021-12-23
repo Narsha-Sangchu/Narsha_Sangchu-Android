@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+            android:id="@+id/substance"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:hint="내용을 입력하세요"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.432"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+            android:id="@+id/post"
+            android:layout_width="144dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="96dp"
+            android:text="게시하기"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintTop_toBottomOf="@+id/substance"
+            app:layout_constraintVertical_bias="0.141"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="@+id/Camera" />
+
+    <ImageButton
+            android:id="@+id/Camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/post"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.134"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/substance"
+            app:layout_constraintVertical_bias="0.744"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageView
+        android:id="@+id/writing_IMG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/substance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
