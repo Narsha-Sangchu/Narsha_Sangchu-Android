@@ -71,8 +71,6 @@ class PostLayout : AppCompatActivity() {
         //var urlen = "http://10.80.163.166:3000/join?id=test191&password=1234"
         var urlen = Const.SERVER+"/read"
         override fun doInBackground(vararg p0: String?): String {
-
-
             try {
                 val url = URL(urlen)
                 val urlConnection = url.openConnection() as HttpURLConnection

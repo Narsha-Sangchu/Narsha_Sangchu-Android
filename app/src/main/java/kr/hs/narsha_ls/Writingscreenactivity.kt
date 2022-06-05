@@ -177,36 +177,34 @@ class Writingscreenactivity : AppCompatActivity() {
                 )
             val req: Call<ResponseBody?>? = apiService.postImage(body, name)
 
-            if (req != null) {
-                req.enqueue(object : Callback<ResponseBody?> {
-                    override fun onResponse(
-                        call: Call<ResponseBody?>,
-                        response: Response<ResponseBody?>
-                    ) {
-                        if (response.code() == 200) {
-        //                        textView.setText("uploaded success")
-        //                        textView.setTextColor(Color.BLUE)
-                            Log.d("test", "test uploaded success ")
-                        }
-                        Toast.makeText(
-                            applicationContext,
-                            response.code().toString() + "",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                        file.delete()
-                        Post(). execute("anonymous", findViewById<EditText>(R.id.substance).text.toString())
+            req?.enqueue(object : Callback<ResponseBody?> {
+                override fun onResponse(
+                    call: Call<ResponseBody?>,
+                    response: Response<ResponseBody?>
+                ) {
+                    if (response.code() == 200) {
+                        //                        textView.setText("uploaded success")
+                        //                        textView.setTextColor(Color.BLUE)
+                        Log.d("test", "test uploaded success ")
                     }
+                    Toast.makeText(
+                        applicationContext,
+                        response.code().toString() + "",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    file.delete()
+                    Post(). execute("anonymous", findViewById<EditText>(R.id.substance).text.toString())
+                }
 
-                    override fun onFailure(call: Call<ResponseBody?>, t: Throwable) {
-        //                    textView.setText("uploaded fail")
-        //                    textView.setTextColor(Color.RED)
-                        Log.d("test", "test uploaded fail ")
-                        Toast.makeText(applicationContext, "req fail", Toast.LENGTH_SHORT).show()
-                        t.printStackTrace()
-                        file.delete()
-                    }
-                })
-            }
+                override fun onFailure(call: Call<ResponseBody?>, t: Throwable) {
+                    //                    textView.setText("uploaded fail")
+                    //                    textView.setTextColor(Color.RED)
+                    Log.d("test", "test uploaded fail ")
+                    Toast.makeText(applicationContext, "req fail", Toast.LENGTH_SHORT).show()
+                    t.printStackTrace()
+                    file.delete()
+                }
+            })
         } catch (e: FileNotFoundException) {
             e.printStackTrace()
         } catch (e: IOException) {
